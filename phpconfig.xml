@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<!--<name>PLG_SYSTEM_PHPCONFIG</name>-->
+	<name>System - PHP Config</name>
+	<author>José A. Cidre Bardelás</author>
+	<authorEmail>info@joomlaempresa.com</authorEmail>
+	<authorUrl>http://joomlaempresa.es</authorUrl>
+	<creationDate>08-2011</creationDate>
+	<copyright>Copyright (C) 2011-2012 Joomla Empresa e José A. Cidre Bardelás - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<version>1.0.1</version>
+	<description>PLG_SYSTEM_PHPCONFIG_XML_DESCRIPTION</description>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_system_phpconfig.ini</language>
+		<language tag="en-GB">en-GB.plg_system_phpconfig.sys.ini</language>
+	</languages>
+
+	<files>
+		<filename plugin="phpconfig">phpconfig.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<!-- Joomla 1.5 params -->
+	<params>
+		<param name="erros" type="radio" default="off" label="PLG_SYSTEM_PHPCONFIG_ERROS" description="PLG_SYSTEM_PHPCONFIG_ERROS_DESC">
+			<option value="on">PLG_SYSTEM_PHPCONFIG_ERROS_MOSTRA</option>
+			<option value="off">PLG_SYSTEM_PHPCONFIG_ERROS_AGOCHA</option>
+		</param>
+		<param name="endereco_ip" type="text" default="0" label="PLG_SYSTEM_PHPCONFIG_IPS_PERMITIDOS" description="PLG_SYSTEM_PHPCONFIG_IPS_PERMITIDOS_DESC" />
+		<param name="nivel_erro" type="list" default="todos" label="PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL" description="PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_DESC">
+			<option value="todos">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_ALL</option>
+			<option value="erros_execucom">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_EXEC</option>
+			<option value="erros_execucom_avisos">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_EXEC_NOTICE</option>
+			<option value="todos_menos_avisos">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_ALL_EXCEPT_NOTICE</option>
+		</param>
+		<param name="max_exectime" type="text" default="0" size="5" label="PLG_SYSTEM_PHPCONFIG_MAX_EXEC" description="PLG_SYSTEM_PHPCONFIG_MAX_EXEC_DESC" />
+		<param name="memory_limit" type="text" default="0" size="5" label="PLG_SYSTEM_PHPCONFIG_MEM_LIMITE" description="PLG_SYSTEM_PHPCONFIG_MEM_LIMITE_DESC" />
+		<param name="amostrar" type="list" default="frontend" label="PLG_SYSTEM_PHPCONFIG_ONDE" description="PLG_SYSTEM_PHPCONFIG_ONDE_DESC">
+			<option value="backend">PLG_SYSTEM_PHPCONFIG_ONDE_BACKEND</option>
+			<option value="frontend">PLG_SYSTEM_PHPCONFIG_ONDE_FRONTEND</option>
+			<option value="todo">PLG_SYSTEM_PHPCONFIG_ONDE_TODO</option>
+		</param>
+	</params>
+
+	<!-- Joomla 1.7 - 2.5 params -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="erros" type="radio" default="off" label="PLG_SYSTEM_PHPCONFIG_ERROS" description="PLG_SYSTEM_PHPCONFIG_ERROS_DESC">
+					<option value="on">PLG_SYSTEM_PHPCONFIG_ERROS_MOSTRA</option>
+					<option value="off">PLG_SYSTEM_PHPCONFIG_ERROS_AGOCHA</option>
+				</field>
+				<field name="endereco_ip" type="text" default="0" label="PLG_SYSTEM_PHPCONFIG_IPS_PERMITIDOS" description="PLG_SYSTEM_PHPCONFIG_IPS_PERMITIDOS_DESC" />
+				<field name="nivel_erro" type="list" default="todos" label="PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL" description="PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_DESC">
+					<option value="todos">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_ALL</option>
+					<option value="erros_execucom">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_EXEC</option>
+					<option value="erros_execucom_avisos">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_EXEC_NOTICE</option>
+					<option value="todos_menos_avisos">PLG_SYSTEM_PHPCONFIG_ERROS_NIVEL_ALL_EXCEPT_NOTICE</option>
+				</field>
+				<field name="max_exectime" type="text" default="0" size="5" label="PLG_SYSTEM_PHPCONFIG_MAX_EXEC" description="PLG_SYSTEM_PHPCONFIG_MAX_EXEC_DESC" />
+				<field name="memory_limit" type="text" default="0" size="5" label="PLG_SYSTEM_PHPCONFIG_MEM_LIMITE" description="PLG_SYSTEM_PHPCONFIG_MEM_LIMITE_DESC" />
+				<field name="amostrar" type="list" default="frontend" label="PLG_SYSTEM_PHPCONFIG_ONDE" description="PLG_SYSTEM_PHPCONFIG_ONDE_DESC">
+					<option value="backend">PLG_SYSTEM_PHPCONFIG_ONDE_BACKEND</option>
+					<option value="frontend">PLG_SYSTEM_PHPCONFIG_ONDE_FRONTEND</option>
+					<option value="todo">PLG_SYSTEM_PHPCONFIG_ONDE_TODO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>
