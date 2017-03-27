@@ -9,4 +9,4 @@ PHPconfig for Joomla! is a developer website tool to help to locate errors in Jo
 
 You can use this function to locate errors in a website in production, as if you change the general configuration of the Joomla to show errors, all the visitors will see the errors, but with PHPconfig plug-in you can choose the IPs that will see the errors, or use another PHP memory limit. Besides, this plug-in also can serve for users that only want to modify the PHP parameters of their Joomla website.
 
-[Official site and package download](http://www.joomlaempresa.es/en/downloads/downloads/phpconfig.html)
+[Official site](http://www.joomlaempresa.es/en/)
